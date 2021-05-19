@@ -1,0 +1,30 @@
+body {
+    background-color: #FFFFED;
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 24px 82px;
+}
+
+h1 {
+    font-size: 112px;
+    margin-bottom: 22px;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+ul > li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 62px;
+}
+
+ul > li a:hover {
+    color: red;
+}
