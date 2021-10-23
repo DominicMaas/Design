@@ -1,30 +1,88 @@
+:root {
+    --screen-sm: 768px;
+    --screen-md: 1024px;
+    --screen-lg: 1200px;
+    --screen-xl: 1600px;
+}
+
 body {
     background-color: #FFFFED;
     font-family: 'Ropa Sans', sans-serif;
-    padding: 24px 82px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: var(--screen-sm)) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: var(--screen-lg)) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: var(--screen-xl)) {
+    body {
+        font-size: 20px;
+    }
 }
 
 h1 {
-    font-size: 112px;
-    margin-bottom: 22px;
+    font-size: 7rem;
+    margin-bottom: 2.1rem;
 }
 
 ul {
     list-style-type: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
-    margin-top: 10px;
+    margin-top: 1.4rem;
 }
 
 ul > li a {
     text-decoration: none;
-    color: #222;
-    font-size: 62px;
+    color: #232323;
+    font-size: 3.8rem;
+    
+    transition: color 100ms ease-in-out, background-color 100ms ease-in-out, border-color 100ms ease-in-out; 
+    
+    padding: 0.15rem 0.6rem;
+    margin: -0.15rem -0.6rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    
+    cursor: default;
 }
 
 ul > li a:hover {
-    color: red;
+    color: #E15A60;
+    background-color: #ffffff;
+    border-color: #e5e5d5;
+    
+    cursor: default;
+}
+
+#header {
+    position: fixed;
+    border-right: 0.25rem solid #222;
+    width: 15rem;
+    padding: 24px 82px;
+    height: 100vh;
+}
+
+main {
+    position: fixed;
+    margin-left: calc(15rem + (82px * 2) + 0.25rem);
+    width: calc(100vw - (15rem + (82px * 2) + 0.25rem));
+    padding: 24px 82px;
+    background-color: rgba(255,255,255,0.4);
+    height: 100vh;
+    
 }
